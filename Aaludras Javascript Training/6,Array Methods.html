@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        const items = ["Apple", "Orange", "Banana"]
+       items[2] = "Graphs";
+        console.log(items);
+       
+    items.push("cova")
+    console.log(items);
+    items.unshift("papaya");
+    console.log(items);
+    items.splice(3,0,"manga")
+    console.log(items);
+    // 
+    console.log("FID Element 22222222");
+    </script>
+
+    <!--Find element  -->
+    <script>
+        const fruits = ["Apple", "Orange", "Graphs", "Apple"]
+        console.log(fruits);
+        let fru = fruits.lastIndexOf("Apple")
+        console.log(fru);
+        // lastIndexOf()
+  
+        console.log("includs");
+      let f =   fruits.includes("Orange")
+        console.log(f);
+
+    </script>
+    
+<!--Find element inReference type -->
+<script>
+    const order = [
+        {id:1, item:"a phone", quantity:1},
+        {id:1, item:"s phone", quantity:1},
+        {id:1, item:"t phone", quantity:1},
+        {id:1, item:"m phone", quantity:1},
+    ]
+     let result = order.findIndex((order)=> order.item === "m phone");
+   
+    console.log(result);
+</script>
+
+<!-- Removing Element -->
+<!-- .pop( ) .shift() .splice()-->
+
+<!-- concat() -->
+<script>
+    const shopping_card  = ["maagi", "Beans", "masala"];
+    const additional_card = ["matchbox", "salt"]
+
+    let recip = shopping_card.concat(additional_card);
+    console.log(recip);
+
+    let extract = recip.splice(2,4);
+    console.log(extract);
+</script>
+
+<!-- spread opeator -->
+<script>
+    let recip2 = [...shopping_card, ...additional_card]
+    console.log(recip2);
+</script>
+
+<!-- split -->
+<script>
+    const dailyRoutine = ["wake up", "Eat", "sleep"];
+    let dailyRoutines= dailyRoutine.join(", ");
+    console.log(dailyRoutines);
+</script>
+<!-- t -->
+<script>
+    let fullName = "Anbu Selvan";
+    console.log(fullName.split(" ")); 
+</script>
+<!-- Sort -->
+<script>
+    const student = [3,8,1];
+    console.log(student);
+    student.sort()
+    console.log(student);
+    student.sort(function(a,b){
+        return b-a;
+    });
+    console.log(student);
+</script>
+<script>
+    const stu = [ 
+        {id:3, name:"Senthil"},
+        {id:8, name:"kmar"},
+        {id:1, name:"kokki"},
+    ];
+    stu.sort(function(a,b){
+         
+    })
+</script>
+
+
+
+</body>
+</html>

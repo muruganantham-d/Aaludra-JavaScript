@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // Factory Function with parameter becous more users
+        function creatPerson(name){
+            return{
+                name: name,
+                greeting(){
+                    let msg = `My name is ${this.name}`;
+                    console.log(msg);
+                }
+            };
+        }
+let anbu = creatPerson("Anbu");
+anbu.greeting();
+let murugan = creatPerson("Murugan");
+murugan.greeting();
+
+    </script>
+</body>
+</html>
